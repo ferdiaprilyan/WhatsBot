@@ -66,7 +66,7 @@ client.on("message", async (msg) => {
       try {
         let getstatus = await afkStatus();
         if (getstatus.on) {
-          await msg.reply(`${getstatus.message}\n\n_Powered by WhatsBot_`);
+          await msg.reply(`${getstatus.message}\n\n_Tuan saya sedang AFK! Kembali lagi nanti_`);
         }
       } catch (e) {
         await logger(
