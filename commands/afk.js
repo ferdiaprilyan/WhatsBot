@@ -10,7 +10,7 @@ const execute = async (client, msg, args) => {
         let getstatus = afkStatus();
         if (getstatus.on) throw new Error("Already AFK mode is on.");
         let message = args.join(" ");
-        if (!message) message = "Currently I'm away. I will be back soon!";
+        if (!message) message = "Tuan saya sedang AFK! kembali lagi nanti";
         startAfk(message);
         let msgtosend = `AFK mode is now on.\n\nMessage: ${message}`;
         await client.sendMessage(msg.to, msgtosend);
